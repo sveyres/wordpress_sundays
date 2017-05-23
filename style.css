@@ -1,0 +1,180 @@
+/*
+Theme Name: miesis_sundays
+Author: me
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: cv
+*/
+.myHeader {
+  background-color: #281400;
+  color: white; }
+  .myHeader ul {
+    margin: 0; }
+    .myHeader ul a {
+      color: inherit; }
+  .myHeader .myTitle {
+    padding: 6em 0; }
+  .myHeader button {
+    background-color: #A28f61;
+    border-radius: 5px;
+    border: 1px solid #A28f61;
+    padding: 0.5em 2em;
+    text-transform: uppercase; }
+  .myHeader h1,
+  .myHeader h2 {
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    margin: 0; }
+  .myHeader h2 {
+    margin: 0.8em 0; }
+  .myHeader div:nth-child(1),
+  .myHeader div:nth-child(3) {
+    padding: 0.5em; }
+
+dt,
+h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: normal; }
+
+main {
+  padding: 3em; }
+  main h3 {
+    font-size: 3em;
+    margin-bottom: 1em; }
+  main .myCatalog {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between; }
+    @media screen and (max-width: 640px) {
+      main .myCatalog {
+        width: 100%; } }
+    main .myCatalog article {
+      margin: 0.5em;
+      box-shadow: 0 0 1em lightgrey;
+      width: 15%; }
+      @media screen and (max-width: 640px) {
+        main .myCatalog article {
+          width: 100%; } }
+      main .myCatalog article img {
+        width: 100%;
+        height: auto; }
+      main .myCatalog article h4,
+      main .myCatalog article h5 {
+        margin: 0; }
+      main .myCatalog article h4 {
+        text-transform: uppercase;
+        margin-top: 0.5em; }
+      main .myCatalog article h5 {
+        color: grey; }
+      main .myCatalog article .soldOut {
+        color: #929292; }
+      main .myCatalog article .onSale {
+        color: #ffcc17; }
+      main .myCatalog article .buy {
+        color: #A28F61; }
+      main .myCatalog article span {
+        font-weight: bold; }
+      main .myCatalog article div {
+        padding: 0.5em; }
+  main .pageProduct {
+    padding: 0; }
+    main .pageProduct article {
+      display: flex;
+      margin: 0.5em;
+      padding: 1em;
+      box-shadow: 0 0 1em lightgrey; }
+      @media screen and (max-width: 640px) {
+        main .pageProduct article {
+          flex-wrap: wrap; } }
+      main .pageProduct article .articleImages {
+        width: 30%; }
+        @media screen and (max-width: 640px) {
+          main .pageProduct article .articleImages {
+            width: 100%; } }
+        main .pageProduct article .articleImages img {
+          width: 100%;
+          height: auto;
+          padding: 0.5em; }
+        main .pageProduct article .articleImages .appercus {
+          display: flex; }
+          main .pageProduct article .articleImages .appercus img {
+            margin: 0.2em; }
+      main .pageProduct article .descriptifProduit {
+        padding: 0 1em;
+        display: flex; }
+        @media screen and (max-width: 640px) {
+          main .pageProduct article .descriptifProduit {
+            flex-wrap: wrap; } }
+        main .pageProduct article .descriptifProduit .btnPrix,
+        main .pageProduct article .descriptifProduit .infoProduit {
+          display: flex;
+          flex-direction: column;
+          padding: 1em; }
+          main .pageProduct article .descriptifProduit .btnPrix button,
+          main .pageProduct article .descriptifProduit .btnPrix input,
+          main .pageProduct article .descriptifProduit .infoProduit button,
+          main .pageProduct article .descriptifProduit .infoProduit input {
+            background-color: inherit;
+            border: 1px solid #A28F61;
+            border-radius: 5px;
+            padding: 0.5em 2em;
+            color: #A28F61;
+            width: 100%;
+            text-transform: uppercase;
+            margin-bottom: 0.5em; }
+          main .pageProduct article .descriptifProduit .btnPrix .infoProduit,
+          main .pageProduct article .descriptifProduit .infoProduit .infoProduit {
+            flex: 2; }
+          main .pageProduct article .descriptifProduit .btnPrix .btnPrix,
+          main .pageProduct article .descriptifProduit .infoProduit .btnPrix {
+            flex: 1; }
+      main .pageProduct article h4 {
+        margin: 0;
+        text-transform: uppercase;
+        margin-top: 0.5em; }
+      main .pageProduct article .soldOut {
+        color: #929292; }
+      main .pageProduct article .onSale {
+        color: #ffcc17; }
+      main .pageProduct article .buy {
+        color: #A28F61; }
+      main .pageProduct article span {
+        font-weight: bold;
+        font-size: 2em; }
+  main .myCart tr {
+    height: 4em; }
+  main .myCart img {
+    height: 4em;
+    width: auto; }
+
+.myFooter {
+  background-color: #0f3e57;
+  color: #B1B1B1;
+  padding: 2em 1em 1em; }
+  .myFooter dt {
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: 0.5em; }
+  .myFooter ul {
+    list-style: none;
+    padding: 0; }
+    .myFooter ul li {
+      padding: 0.3em 0; }
+      .myFooter ul li i {
+        margin-right: 0.5em; }
+      .myFooter ul li a {
+        color: inherit; }
+  .myFooter button {
+    background-color: inherit;
+    border: 1px solid #B1B1B1;
+    border-radius: 5px;
+    padding: 0 1em; }
+  .myFooter button,
+  .myFooter input {
+    height: 35px; }
+
+/*# sourceMappingURL=style.css.map */
