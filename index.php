@@ -28,153 +28,31 @@
     <main>
         <h3 class="text-center">Spring Summer 2017</h3>
         <div class="myCatalog">
+
+        <?php
+        $args = array(
+	           'posts_per_page'   => 20,
+	           'category_name'    => 'product'
+        );
+        $articles = get_posts($args);
+        foreach ($articles as $article) {
+            var_dump($article);
+            setup_postdata( $article ); ?>
             <article>
                 <img src="http://lorempixel.com/110/150/" alt="img_product">
                 <div>
-                    <h4 class="buy">Buy</h4>
-                    <h5>Winter Scarf</h5>
-                    <span>$180.00</span>
+                    <h4 class="buy"></h4>
+                    <h5><?php the_title(); ?></h5>
+                    <span></span>
                 </div>
             </article>
 
-            <article>
-                <img src="http://lorempixel.com/110/150/" alt="img_product">
-                <div>
-                    <h4 class="onSale">On sale</h4>
-                    <h5>Winter Scarf</h5>
-                    <span>$180.00</span>
-                </div>
-            </article>
-            <article>
-                <img src="http://lorempixel.com/110/150/" alt="img_product">
-                <div>
-                    <h4 class="soldOut">Sold out</h4>
-                    <h5>Winter Scarf</h5>
-                    <span>$180.00</span>
-                </div>
-            </article>
-            <article>
-                <img src="http://lorempixel.com/110/150/" alt="img_product">
-                <div>
-                    <h4 class="buy">Buy</h4>
-                    <h5>Winter Scarf</h5>
-                    <span>$180.00</span>
-                </div>
-            </article>
-            <article>
-                <img src="http://lorempixel.com/110/150/" alt="img_product">
-                <div>
-                    <h4 class="buy">Buy</h4>
-                    <h5>Winter Scarf</h5>
-                    <span>$180.00</span>
-                </div>
-            </article>
-            <article>
-                <img src="http://lorempixel.com/110/150/" alt="img_product">
-                <div>
-                    <h4 class="onSale">On sale</h4>
-                    <h5>Winter Scarf</h5>
-                    <span>$180.00</span>
-                </div>
-            </article>
-            <article>
-                <img src="http://lorempixel.com/110/150/" alt="img_product">
-                <div>
-                    <h4 class="buy">Buy</h4>
-                    <h5>Winter Scarf</h5>
-                    <span>$180.00</span>
-                </div>
-            </article>
-            <article>
-                <img src="http://lorempixel.com/110/150/" alt="img_product">
-                <div>
-                    <h4 class="buy">Buy</h4>
-                    <h5>Winter Scarf</h5>
-                    <span>$180.00</span>
-                </div>
-            </article>
-            <article>
-                <img src="http://lorempixel.com/110/150/" alt="img_product">
-                <div>
-                    <h4 class="soldOut">Sold out</h4>
-                    <h5>Winter Scarf</h5>
-                    <span>$180.00</span>
-                </div>
-            </article>
-            <article>
-                <img src="http://lorempixel.com/110/150/" alt="img_product">
-                <div>
-                    <h4 class="onSale">On sale</h4>
-                    <h5>Winter Scarf</h5>
-                    <span>$180.00</span>
-                </div>
-            </article>
-            <article>
-                <img src="http://lorempixel.com/110/150/" alt="img_product">
-                <div>
-                    <h4 class="buy">Buy</h4>
-                    <h5>Winter Scarf</h5>
-                    <span>$180.00</span>
-                </div>
-            </article>
-            <article>
-                <img src="http://lorempixel.com/110/150/" alt="img_product">
-                <div>
-                    <h4 class="soldOut">Sold out</h4>
-                    <h5>Winter Scarf</h5>
-                    <span>$180.00</span>
-                </div>
-            </article>
-            <article>
-                <img src="http://lorempixel.com/110/150/" alt="img_product">
-                <div>
-                    <h4 class="onSale">On sale</h4>
-                    <h5>Winter Scarf</h5>
-                    <span>$180.00</span>
-                </div>
-            </article>
-            <article>
-                <img src="http://lorempixel.com/110/150/" alt="img_product">
-                <div>
-                    <h4 class="buy">Buy</h4>
-                    <h5>Winter Scarf</h5>
-                    <span>$180.00</span>
-                </div>
-            </article>
-            <article>
-                <img src="http://lorempixel.com/110/150/" alt="img_product">
-                <div>
-                    <h4 class="buy">BUY</h4>
-                    <h5>Winter Scarf</h5>
-                    <span>$180.00</span>
-                </div>
-            </article>
-            <article>
-                <img src="http://lorempixel.com/110/150/" alt="img_product">
-                <div>
-                    <h4 class="buy">Buy</h4>
-                    <h5>Winter Scarf</h5>
-                    <span>$180.00</span>
-                </div>
-            </article>
+        <?php };?>
 
-            <article>
-                <img src="http://lorempixel.com/110/150/" alt="img_product">
-                <div>
-                    <h4 class="buy">Buy</h4>
-                    <h5>Winter Scarf</h5>
-                    <span>$180.00</span>
-                </div>
-            </article>
 
-            <article>
-                <img src="http://lorempixel.com/110/150/" alt="img_product">
-                <div>
-                    <h4 class="buy">Buy</h4>
-                    <h5>Winter Scarf</h5>
-                    <span>$180.00</span>
-                </div>
-            </article>
+
+
+
         </div>
     </main>
     <footer>
