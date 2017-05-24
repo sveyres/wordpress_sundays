@@ -7,6 +7,14 @@ License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: cv
 */
+body {
+  width: 80%;
+  margin: auto;
+  background-color: lightgrey; }
+  @media screen and (max-width: 900px) {
+    body {
+      width: 100%; } }
+
 .myHeader {
   background-color: #281400;
   color: white; }
@@ -39,7 +47,8 @@ h3 {
   font-weight: normal; }
 
 main {
-  padding: 3em; }
+  padding: 3em;
+  background-color: white; }
   main h3 {
     font-size: 3em;
     margin-bottom: 1em; }
@@ -76,6 +85,9 @@ main {
         color: #ffcc17; }
       main .myCatalog article .buy {
         color: #A28F61; }
+      main .myCatalog article a {
+        text-decoration: none;
+        color: inherit; }
       main .myCatalog article span {
         font-weight: bold; }
       main .myCatalog article div {
@@ -104,6 +116,7 @@ main {
           main .pageProduct article .articleImages .appercus img {
             margin: 0.2em; }
       main .pageProduct article .descriptifProduit {
+        width: 100%;
         padding: 0 1em;
         display: flex; }
         @media screen and (max-width: 640px) {
@@ -136,9 +149,9 @@ main {
         margin: 0;
         text-transform: uppercase;
         margin-top: 0.5em; }
-      main .pageProduct article .soldOut {
+      main .pageProduct article .sold-out {
         color: #929292; }
-      main .pageProduct article .onSale {
+      main .pageProduct article .on-sale {
         color: #ffcc17; }
       main .pageProduct article .buy {
         color: #A28F61; }

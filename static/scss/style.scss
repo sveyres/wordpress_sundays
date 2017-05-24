@@ -10,7 +10,14 @@ Text Domain: cv
 
 
 @import "base";
-
+body{
+    width: 80%;
+    margin: auto;
+    background-color: lightgrey;
+    @media screen and (max-width: $widthTablette) {
+        width: 100%;
+    }
+}
 .myHeader {
     background-color: #281400;
     color: white;
@@ -50,13 +57,15 @@ h3 {
     font-family: $fontTitle;
     font-weight: normal;
 }
-
+// -------------------------------------<MAIN>
 main {
     padding: 3em;
+    background-color: white;
     h3 {
         font-size: 3em;
         margin-bottom: 1em;
     }
+    // -------------------------------------<CATALOG>
     .myCatalog{
         display: flex;
         flex-wrap: wrap;
@@ -103,7 +112,10 @@ main {
             .buy {
                 color: #A28F61;
             }
-
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
             span {
                 font-weight: bold;
             }
@@ -111,9 +123,12 @@ main {
             div {
                 padding: 0.5em;
             }
+
         }
 
     }
+    // -------------------------------------</CATALOG>
+    // -------------------------------------</PAGE-PRODUCT>
     .pageProduct {
         padding: 0;
 
@@ -140,7 +155,6 @@ main {
 
                 .appercus {
                     display: flex;
-
                     img {
                         margin: 0.2em;
                     }
@@ -148,6 +162,7 @@ main {
             }
 
             .descriptifProduit {
+                width: 100%;
                 padding: 0 1em;
                 display: flex;
                 @media screen and (max-width: $widthMobile) {
@@ -186,12 +201,11 @@ main {
                 text-transform: uppercase;
                 margin-top: 0.5em;
             }
-
-            .soldOut {
+            .sold-out {
                 color: #929292;
             }
 
-            .onSale {
+            .on-sale {
                 color: #ffcc17;
             }
 
@@ -205,6 +219,8 @@ main {
             }
         }
     }
+    // -------------------------------------</PAGE-PRODUCT>
+    // -------------------------------------<CART>
     .myCart{
         tr{
             height: 4em;
@@ -214,8 +230,10 @@ main {
             width: auto;
         }
     }
+    // -------------------------------------</CART>
 }
-
+// -------------------------------------</MAIN>
+// -------------------------------------<FOOTER>
 .myFooter {
     background-color: #0f3e57;
     color: $colorLinkFooter;
@@ -258,3 +276,4 @@ main {
         height: 35px;
     }
 }
+// -------------------------------------</FOOTER>
