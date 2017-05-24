@@ -32,8 +32,20 @@
                         <dl>
                             <dt>Newsletter</dt>
                             <dd>
-                                <input type="email" name="user_mail" value="your email">
-                                <button type="button" name="button">OK</button>
+
+                                <form>
+                                    <input type="email" name="email" value="" placeholder="Your email">
+                                    <button type="submit" name="button">OK</button>
+                                </form>
+                                <?php
+				                    date_default_timezone_set('UTC');
+    				                    if (isset($_GET['email'])){
+        					                $wpdb->insert(
+        							            'emails',
+        							            array(	'email' => $_GET['email'],)
+    					                );
+				                    };
+			                    ?>
                             </dd>
                         </dl>
                     </div>
@@ -56,11 +68,8 @@
         </div>
     <!-- /.container fluid -->
     </footer>
-    <script src="static/external/jquery/dist/jquery.js"></script>
-    <script src="static/external/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="static/js/script.js"></script>
-
+    <script src="<?php echo get_stylesheet_directory_uri().'/static/external/jquery/dist/jquery.min.js' ; ?>"></script>
+    <script src="<?php echo get_stylesheet_directory_uri().'/static/external/bootstrap/dist/js/bootstrap.min.js'; ?>"></script>
 </body>
-
 
 </html>

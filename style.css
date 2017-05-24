@@ -18,12 +18,25 @@ body {
 .myHeader {
   background-color: #281400;
   color: white; }
+  .myHeader .navbar-nav,
+  .myHeader li {
+    display: inline-block;
+    float: none;
+    text-align: center;
+    padding: 0 1em; }
+  .myHeader .navbar-default,
+  .myHeader .navbar-toggle {
+    color: inherit;
+    background-color: inherit;
+    border: none;
+    padding: 0; }
   .myHeader ul {
     margin: 0; }
     .myHeader ul a {
       color: inherit; }
   .myHeader .myTitle {
-    padding: 6em 0; }
+    padding: 6em 0;
+    text-align: center; }
   .myHeader button {
     background-color: #A28f61;
     border-radius: 5px;
@@ -158,12 +171,11 @@ main {
       main .pageProduct article span {
         font-weight: bold;
         font-size: 2em; }
-  main .myblog article {
-    width: 50%; }
-    main .myblog article .panel-body {
-      display: flex; }
-      main .myblog article .panel-body p {
-        padding-left: 1em; }
+  main .myblog article .panel-body {
+    display: flex;
+    align-items: flex-start; }
+    main .myblog article .panel-body p {
+      padding-left: 1em; }
   main .myCart tr {
     height: 4em; }
   main .myCart img {

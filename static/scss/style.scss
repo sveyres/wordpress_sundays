@@ -21,7 +21,20 @@ body{
 .myHeader {
     background-color: #281400;
     color: white;
-
+    .navbar-nav,
+    li {
+        display: inline-block;
+        float: none;
+        text-align: center;
+        padding: 0 1em;
+    }
+    .navbar-default,
+    .navbar-toggle {
+        color:inherit;
+        background-color: inherit;
+        border: none;
+        padding: 0;
+    }
     ul {
         margin: 0;
         a {
@@ -30,6 +43,7 @@ body{
     }
     .myTitle {
         padding: 6em 0;
+        text-align: center;
     }
     button {
         background-color: #A28f61;
@@ -223,9 +237,10 @@ main {
 
     .myblog {
         article{
-            width : 50%;
+
             .panel-body {
                 display: flex;
+                align-items: flex-start;
                 p {
                     padding-left: 1em;
                 }

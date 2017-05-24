@@ -15,18 +15,33 @@
     <div class="container-fluid">
         <div class="row myHeader">
             <div class="col-md-12 text-center">
-                <div>
+                <nav class="navbar navbar-default">
+                      <div class="container-fluid">
+                        <div class="navbar-header">
+                          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                          </button>
+                        </div>
+                        <?php
+                        $args = array (
+                            'container' => 'div',
+                            'container_class' => 'collapse navbar-collapse',
+                            'container_id' => 'bs-example-navbar-collapse-1',
+                            'menu_class' => 'nav navbar-nav',
+                        );
+                        wp_nav_menu($args) ?>
+                      </div>
+                    </nav>
                     <ul class="list-inline">
-                        <li><a href="<?php echo get_page_link(43) ?>">Catalog</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="index.html">Store</a></li>
-                        <li><a href="<?php echo get_page_link(41) ?>">Blog</a></li>
                         <li class="pull-right"> <a href="panier.html"><span class="glyphicon glyphicon-shopping-cart"></span></a> <a href="login.html"><span class="glyphicon glyphicon-user"></span></a> <span class="glyphicon glyphicon-search"></span></li>
                     </ul>
                 </div>
                 <div class="myTitle">
-                    <h1 class="text-center text-uppercase">Sundays</h1>
-                    <h2 class="text-center">We craft ocean <br>friendly apparel</h2>
+                    <h1 class="text-uppercase">Sundays</h1>
+                    <h2 class="">We craft ocean <br>friendly apparel</h2>
                     <button type="button" name="button">Browse our products</button>
                 </div>
                 <div>
