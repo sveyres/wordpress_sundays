@@ -53,9 +53,9 @@ main {
       main .myCatalog {
         width: 100%; } }
     main .myCatalog article {
-      margin: 0.5em;
+      margin: 1em 0;
       box-shadow: 0 0 1em lightgrey;
-      width: 15%; }
+      width: 18%; }
       @media screen and (max-width: 640px) {
         main .myCatalog article {
           width: 100%; } }
@@ -70,9 +70,9 @@ main {
         margin-top: 0.5em; }
       main .myCatalog article h5 {
         color: grey; }
-      main .myCatalog article .soldOut {
+      main .myCatalog article .sold-out {
         color: #929292; }
-      main .myCatalog article .onSale {
+      main .myCatalog article .on-sale {
         color: #ffcc17; }
       main .myCatalog article .buy {
         color: #A28F61; }

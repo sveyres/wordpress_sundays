@@ -34,16 +34,18 @@
 	           'posts_per_page'   => 20,
 	           'category_name'    => 'product'
         );
-        $articles = get_posts($args);
-        foreach ($articles as $article) {
-            var_dump($article);
-            setup_postdata( $article ); ?>
+        $posts = get_posts($args);
+
+        foreach ($posts as $post) {
+            setup_postdata( $post );
+            $tags = wp_get_post_tags($post->ID);
+            ?>
             <article>
                 <img src="http://lorempixel.com/110/150/" alt="img_product">
                 <div>
-                    <h4 class="buy"></h4>
+                    <h4 class="<?php echo $tags[0]->name ?>"><?php echo $tags[0]->name ?></h4>
                     <h5><?php the_title(); ?></h5>
-                    <span></span>
+                    <span><?php echo get_post_meta( $post->ID,'price', true ) ?> €</span>
                 </div>
             </article>
 

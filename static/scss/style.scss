@@ -67,9 +67,9 @@ main {
         margin: auto;
         justify-content: space-between;
         article {
-            margin: 0.5em;
+            margin: 1em 0;
             box-shadow: 0 0 1em lightgrey;
-            width: 15%;
+            width: 18%;
             @media screen and (max-width: $widthMobile) {
                 width: 100%;
             }
@@ -92,11 +92,11 @@ main {
                 color: grey;
             }
 
-            .soldOut {
+            .sold-out {
                 color: #929292;
             }
 
-            .onSale {
+            .on-sale {
                 color: #ffcc17;
             }
 
