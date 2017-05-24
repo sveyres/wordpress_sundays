@@ -158,6 +158,12 @@ main {
       main .pageProduct article span {
         font-weight: bold;
         font-size: 2em; }
+  main .myblog article {
+    width: 50%; }
+    main .myblog article .panel-body {
+      display: flex; }
+      main .myblog article .panel-body p {
+        padding-left: 1em; }
   main .myCart tr {
     height: 4em; }
   main .myCart img {

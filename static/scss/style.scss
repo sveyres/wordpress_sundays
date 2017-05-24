@@ -220,6 +220,19 @@ main {
         }
     }
     // -------------------------------------</PAGE-PRODUCT>
+
+    .myblog {
+        article{
+            width : 50%;
+            .panel-body {
+                display: flex;
+                p {
+                    padding-left: 1em;
+                }
+            }
+
+        }
+    }
     // -------------------------------------<CART>
     .myCart{
         tr{
